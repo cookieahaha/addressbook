@@ -24,7 +24,7 @@ public class ContactMainView extends JFrame {
 		final ContactList contactList;
 		contactList = new ContactList();
 
-		contactList.init();
+		contactList.readFromFile();
 
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {

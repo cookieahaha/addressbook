@@ -72,8 +72,8 @@ public class ContactInformationPanelView extends JPanel implements ActionListene
 	
 // actions when the delete button was clicked
 		public void actionPerformed(ActionEvent event){
-			contactList.deleteContact(contact);
-			contactList.writeLinesToFile("contacts.txt", false);
+			contactList.delete(contact);
+			contactList.writeToFile("addressbook.ser", false);
 			
 			contactMainView.setVisible(false);
         	contactMainView.getContentPane().removeAll();

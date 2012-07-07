@@ -161,7 +161,7 @@ public class ContactEntryView extends JFrame implements ActionListener{
                 	
                 	contactList.addContact(contact);
                 	contactList.sortLastName();
-                	contactList.writeLinesToFile("contacts.txt", false);
+                	contactList.writeLinesToFile("addressbook.ser", false);
                 	//contactList.printContactList();
                 	
                 	this.setVisible(false);
